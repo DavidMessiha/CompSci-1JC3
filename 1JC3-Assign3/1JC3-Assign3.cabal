@@ -1,0 +1,69 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.31.1.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: 2823b74c34c0649d44cd8c8f280478bb5f824b794f10b921159a9b87e09521d0
+
+name:           1JC3-Assign3
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/dalvescb/1JC3-Assign3#readme>
+homepage:       https://github.com/dalvescb/1JC3-Assign3#readme
+bug-reports:    https://github.com/dalvescb/1JC3-Assign3/issues
+author:         Curtis D&#39;Alves
+maintainer:     curtis.dalves@gmail.com
+copyright:      copyright: (c) 2019 Curtis D&#39;Alves
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    ChangeLog.md
+
+source-repository head
+  type: git
+  location: https://github.com/dalvescb/1JC3-Assign3
+
+library
+  exposed-modules:
+      Assign_3
+      Assign_3_ExtraCredit
+  other-modules:
+      Paths_1JC3_Assign3
+  hs-source-dirs:
+      src
+  build-depends:
+      QuickCheck
+    , base >=4.7 && <5
+    , containers
+  default-language: Haskell2010
+
+executable 1JC3-Assign3-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_1JC3_Assign3
+  hs-source-dirs:
+      app
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      1JC3-Assign3
+    , QuickCheck
+    , base >=4.7 && <5
+    , containers
+  default-language: Haskell2010
+
+test-suite 1JC3-Assign3-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_1JC3_Assign3
+  hs-source-dirs:
+      test
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      1JC3-Assign3
+    , QuickCheck
+    , base >=4.7 && <5
+    , containers
+  default-language: Haskell2010
