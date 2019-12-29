@@ -1,0 +1,1 @@
+Prod (Quot (Coef 1.0) (Quot X X)) (Quot (Sum X (Prod X (Coef (-1.0)))) (Prod X X))
